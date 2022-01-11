@@ -2,15 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { RiArrowDownSLine } from "react-icons/ri";
 import Fade from "react-reveal/Fade";
+import Header from "./Header";
 
 function Section() {
   return (
     <Wrap>
+      <Header />
       <MainContainer>
         <TextWrap>
-          <Fade left>
-            <h1>Matthew Baxter</h1>
-          </Fade>
           <Fade right>
             <p>
               I've been designing different websites for over 5 years now. I've
@@ -70,6 +69,7 @@ const TextWrap = styled.div`
   padding: 18px;
   width: 45%;
   background-color: rgba(34, 34, 34, 0.692);
+  backdrop-filter: blur(0.6rem);
   border-radius: 10px;
   /* box-shadow: 8px 5px 5px #222; */
 
@@ -96,4 +96,5 @@ const TextWrap = styled.div`
 const ArrowDown = styled.div`
   overflow-y: "hidden";
   color: white;
+  font-size: 35px;
 `;

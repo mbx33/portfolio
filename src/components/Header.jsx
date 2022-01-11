@@ -4,13 +4,15 @@ import styled from "styled-components";
 function Header() {
   return (
     <MainContainer>
-      <a href="/">
-        <img src="/images/mb.main.logo.png" alt="main logo" />
-      </a>
+      <div className="logo">
+        <a href="/">
+          <h1>Matt Baxter</h1>
+        </a>
+      </div>
       <Menu>
         <a href="/">Contact</a>
         <a href="/">Projects</a>
-        <a href="/">About</a>
+        {/* <a href="/">About</a> */}
       </Menu>
     </MainContainer>
   );
@@ -19,12 +21,18 @@ function Header() {
 export default Header;
 
 const MainContainer = styled.div`
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
-  flex-direction: column;
-  position: fixed;
+  justify-content: space-between;
+  height: 6vh;
+  padding: 20px;
+
+  .logo {
+    a {
+      font-size: 20px;
+      color: rgba(34, 34, 34, 0.692);
+    }
+  }
+
   a {
     text-decoration: none;
   }
@@ -32,14 +40,15 @@ const MainContainer = styled.div`
 
 const Menu = styled.div`
   align-items: center;
-  flex: 1;
 
   a {
-    padding: 0 10px;
+    padding: 10px 30px;
     font-weight: 550;
     cursor: pointer;
     letter-spacing: 1px;
+    font-size: 20px;
     text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.692);
   }
 
   @media (max-width: 768px) {

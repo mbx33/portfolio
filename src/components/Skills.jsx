@@ -8,6 +8,7 @@ import {
   SiNodedotjs,
   SiMongodb,
 } from "react-icons/si";
+import { FaGitAlt, FaGithub } from "react-icons/fa";
 import Bounce from "react-reveal/Bounce";
 
 function Skills() {
@@ -44,6 +45,16 @@ function Skills() {
           <br />
           <p>React</p>
         </SkillWrap>
+        <SkillWrap>
+          <FaGitAlt style={{ color: "red" }} />
+          <br />
+          <p>GIT</p>
+        </SkillWrap>
+        <SkillWrap>
+          <FaGithub style={{ color: "#4495d4" }} />
+          <br />
+          <p>Github</p>
+        </SkillWrap>
       </Bounce>
     </Container>
   );
@@ -56,6 +67,7 @@ const Container = styled.div`
   background-color: #222;
   display: flex;
   justify-content: center;
+  padding-bottom: 10rem;
   /* border-radius: 0 0 15px 15px; */
 `;
 
