@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import Footer from "./Footer";
-import Projects from "./Projects";
-import Section from "./Section";
-import Skills from "./Skills";
-import SoftSkills from "./SoftSkills";
+import Projects from "../components/Projects";
+import Section from "../components/Section";
+import Skills from "../components/Skills";
+import SoftSkills from "../components/SoftSkills";
 
 function Home() {
   return (
@@ -13,7 +12,6 @@ function Home() {
       <Skills />
       <SoftSkills />
       <Projects />
-      <Footer />
     </Container>
   );
 }
@@ -21,5 +19,5 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  height: 100vh;
+  /* height: 100vh; */
 `;

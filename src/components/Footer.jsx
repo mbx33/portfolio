@@ -30,7 +30,7 @@ const Menu = styled.div`
   padding-top: 1rem;
   display: flex;
   bottom: 0;
-  background-color: #222;
+  width: 100%;
   font-size: 60px;
 
   a {

@@ -3,12 +3,10 @@ import styled from "styled-components";
 
 function Projects() {
   return (
-    <Container>
-      <h2>Recent Projects</h2>
+    <Container id="projects">
+      <h2>My Recent Projects</h2>
+      <br />
       <ProjectWrap>
-        <LinkWrap></LinkWrap>
-        <LinkWrap></LinkWrap>
-        <LinkWrap></LinkWrap>
         <LinkWrap></LinkWrap>
         <LinkWrap></LinkWrap>
         <LinkWrap></LinkWrap>
@@ -21,9 +19,7 @@ export default Projects;
 
 const Container = styled.div`
   padding: 2em 0;
-  width: 100vw;
-  /* height: 40vh; */
-  background-color: #000;
+  width: 100%;
   color: white;
 `;
 
@@ -35,7 +31,7 @@ const ProjectWrap = styled.div`
 
 const LinkWrap = styled.div`
   width: 23vw;
-  height: 20vh;
+  height: 25vh;
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */

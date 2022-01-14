@@ -1,5 +1,5 @@
-import React from "react";
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 function Header() {
   return (
@@ -10,8 +10,10 @@ function Header() {
         </a>
       </div>
       <Menu>
+        <Link to="projects" spy={true} smooth={true} duration={500}>
+          <a href="/">Projects</a>
+        </Link>
         <a href="/">Contact</a>
-        <a href="/">Projects</a>
         {/* <a href="/">About</a> */}
       </Menu>
     </MainContainer>
@@ -30,6 +32,9 @@ const MainContainer = styled.div`
     a {
       font-size: 20px;
       color: rgba(34, 34, 34, 0.692);
+    }
+    h1 {
+      cursor: default;
     }
   }
 
