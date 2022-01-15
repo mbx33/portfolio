@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin, SiYoutube } from "react-icons/si";
 
 function Footer() {
   return (
-    <Menu className="footer">
+    <Menu className="footer" id="links">
       <a href="https://github.com/mbx33" target="_blank" rel="noreferrer">
         <SiGithub style={{ color: "white" }} />
       </a>
@@ -13,10 +13,10 @@ function Footer() {
         target="_blank"
         rel="noreferrer"
       >
-        <SiLinkedin style={{ color: "blue" }} />
+        <SiLinkedin style={{ color: "white" }} />
       </a>
       <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-        <SiYoutube style={{ color: "red" }} />
+        <SiYoutube style={{ color: "white" }} />
       </a>
     </Menu>
   );
@@ -33,7 +33,7 @@ const Menu = styled.div`
   font-size: 60px;
   background-image: url("/images/ground.png");
   background-repeat: no-repeat;
-  background-size: 28em auto;
+  background-size: 29em auto;
 
   a {
     padding: 10px 70px;

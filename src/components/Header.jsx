@@ -13,7 +13,10 @@ function Header() {
         <Link to="projects" spy={true} smooth={true} duration={500}>
           <a href="/">Projects</a>
         </Link>
-        <a href="/">Contact</a>
+        <Link to="links" spy={true} smooth={true} duration={500}>
+          <a href="/">Links</a>
+        </Link>
+        {/* <a href="/">Contact</a> */}
         {/* <a href="/">About</a> */}
       </Menu>
     </MainContainer>
@@ -47,7 +50,7 @@ const Menu = styled.div`
   align-items: center;
 
   a {
-    padding: 10px 30px;
+    padding: 10px 20px;
     font-weight: 550;
     cursor: pointer;
     letter-spacing: 1px;

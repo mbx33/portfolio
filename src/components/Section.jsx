@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { RiArrowDownSLine } from "react-icons/ri";
+// import { RiArrowDownSLine } from "react-icons/ri";
+import { BsArrowBarDown } from "react-icons/bs";
+import { Link } from "react-scroll";
+
 import Fade from "react-reveal/Fade";
 import Header from "./Header";
+
+import "../index.css";
 
 function Section() {
   return (
@@ -30,14 +35,17 @@ function Section() {
           <br />
           <h3>Projects</h3>
 
-          <RiArrowDownSLine
-            style={{
-              fontSize: "50px",
-              marginTop: "20px",
-              height: "40px",
-              animation: "animateDown infinite 1.5s",
-            }}
-          />
+          <Link to="skills" spy={true} smooth={true} duration={500}>
+            <BsArrowBarDown
+              style={{
+                fontSize: "50px",
+                marginTop: "20px",
+                height: "40px",
+                animation: "animateDown infinite 1.5s",
+                cursor: "pointer",
+              }}
+            />
+          </Link>
         </ArrowDown>
       </MainContainer>
     </Wrap>
@@ -97,4 +105,5 @@ const ArrowDown = styled.div`
   overflow-y: "hidden";
   color: white;
   font-size: 35px;
+  padding-bottom: 50px;
 `;

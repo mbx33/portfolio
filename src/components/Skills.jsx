@@ -13,7 +13,7 @@ import Bounce from "react-reveal/Bounce";
 
 function Skills() {
   return (
-    <Container>
+    <Container id="skills">
       <Bounce bottom>
         <SkillWrap>
           <ImHtmlFive2 style={{ color: "red" }} />
