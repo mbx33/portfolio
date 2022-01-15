@@ -4,7 +4,7 @@ import { SiGithub, SiLinkedin, SiYoutube } from "react-icons/si";
 
 function Footer() {
   return (
-    <Menu>
+    <Menu className="footer">
       <a href="https://github.com/mbx33" target="_blank" rel="noreferrer">
         <SiGithub style={{ color: "white" }} />
       </a>
@@ -27,17 +27,20 @@ export default Footer;
 const Menu = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
-  bottom: 0;
   width: 100%;
   font-size: 60px;
+  background-image: url("/images/ground.png");
+  background-repeat: no-repeat;
+  background-size: 28em auto;
 
   a {
-    padding: 0 70px;
+    padding: 10px 70px;
     font-weight: 550;
     cursor: pointer;
     letter-spacing: 1px;
     text-decoration: none;
+    margin: 0 1em;
   }
 `;
