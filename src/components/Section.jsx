@@ -18,9 +18,9 @@ function Section() {
           <Fade right>
             <p>
               I've been designing different websites for over 5 years now. I've
-              just started to develop the skills necassary to code and create
-              better designs. I have a desire to build and design user friendly
-              websites.
+              just started to develop the skills necessary to code and create
+              better designs. I have a desire to keep learning and building
+              better designed websites.
             </p>
             <p>
               I have lived in Russia, and love travelling to other countries.

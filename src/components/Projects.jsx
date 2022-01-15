@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Bounce from "react-reveal/Bounce";
+import ReactPlayer from "react-player/lazy";
 
 function Projects() {
   return (
@@ -22,9 +23,18 @@ function Projects() {
         </SideArticleContainer>
 
         <LinkContainer>
-          <LinkWrap></LinkWrap>
-          <LinkWrap></LinkWrap>
-          <LinkWrap></LinkWrap>
+          <LinkWrap>
+            <ReactPlayer
+              title="project1"
+              width="380px"
+              height="280px"
+              url="https://youtu.be/1yeCO9h_Z7A"
+              frameborder="0"
+              muted="true"
+              controls="true"
+              style={{ border: "2px solid white" }}
+            />
+          </LinkWrap>
         </LinkContainer>
       </ProjectWrap>
     </Container>
@@ -35,6 +45,7 @@ export default Projects;
 
 const Container = styled.div`
   padding: 2em 0;
+  height: 100%;
   width: 100%;
   color: white;
 `;
@@ -42,7 +53,7 @@ const Container = styled.div`
 const ProjectWrap = styled.div`
   display: flex;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   padding-bottom: 20px;
 `;
 
@@ -50,26 +61,24 @@ const LinkContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  align-items: center;
   width: 50%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 `;
 
 const LinkWrap = styled.div`
   width: 50%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
+
   /* background-repeat: no-repeat; */
-  background-image: url("/images/Disco.jpeg.jpg");
   margin: 10px auto;
-  border: 3px solid white;
 `;
 
 const SideArticleContainer = styled.div`
   position: sticky;
   top: 0;
   width: 50%;
-  border: 2px solid gray;
+  /* border: 2px solid gray; */
 
   .article-content {
     width: 65%;
