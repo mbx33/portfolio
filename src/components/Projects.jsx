@@ -13,10 +13,9 @@ function Projects() {
               <h2>My Recent Projects</h2>
               <br />
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti tempore dolores eaque quo, quaerat consectetur officiis
-                doloribus ducimus architecto iste sint modi porro tempora.
-                Repellat dolorum repudiandae fugiat necessitatibus est.
+                A few of my most recent projects I've worked on. I'll post more
+                demos soon, as well as future features that I want to add to
+                them.
               </p>
             </div>
           </Bounce>
@@ -24,11 +23,38 @@ function Projects() {
 
         <LinkContainer>
           <LinkWrap>
+            <p>Sightseeing Tour sight</p>
             <ReactPlayer
               title="project1"
               width="380px"
               height="280px"
               url="https://youtu.be/1yeCO9h_Z7A"
+              frameborder="0"
+              muted="true"
+              controls="true"
+              style={{ border: "2px solid white" }}
+            />
+          </LinkWrap>
+          <LinkWrap>
+            <p>Coming Soon..</p>
+            <ReactPlayer
+              title="project1"
+              width="380px"
+              height="280px"
+              url="#"
+              frameborder="0"
+              muted="true"
+              controls="true"
+              style={{ border: "2px solid white" }}
+            />
+          </LinkWrap>
+          <LinkWrap>
+            <p>Coming Soon..</p>
+            <ReactPlayer
+              title="project1"
+              width="380px"
+              height="280px"
+              url="#"
               frameborder="0"
               muted="true"
               controls="true"
