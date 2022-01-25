@@ -63,13 +63,13 @@ function Skills() {
 export default Skills;
 
 const Container = styled.div`
-  /* height: 22vh; */
   background-color: #222;
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
+  padding-top: 1rem;
   border-bottom: 2px solid black;
-  box-shadow: 3px 2px 3px black;
+  row-gap: 3rem;
 `;
 
 const SkillWrap = styled.div`
@@ -77,6 +77,14 @@ const SkillWrap = styled.div`
   padding-right: 18px;
   padding-left: 18px;
   font-size: 90px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 350ms ease-in;
+
+  &:hover {
+    box-shadow: 0 0 1.5rem hsl(0, 0%, 100%, 0.8);
+    transform: scale(1.1);
+  }
 
   p {
     font-size: 20px;
