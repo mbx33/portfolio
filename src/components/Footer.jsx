@@ -27,8 +27,6 @@ export default Footer;
 const Menu = styled.div`
   display: flex;
   justify-content: center;
-  /* padding-top: 1rem; */
-  display: flex;
   width: 100%;
   font-size: 60px;
   background-image: url("/images/ground.png");
@@ -42,5 +40,13 @@ const Menu = styled.div`
     letter-spacing: 1px;
     text-decoration: none;
     margin: 0 1em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+
+    a {
+      padding: 5px;
+    }
   }
 `;

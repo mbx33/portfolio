@@ -56,7 +56,7 @@ export default Section;
 
 const Wrap = styled.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,6 @@ const TextWrap = styled.div`
   background-color: rgba(34, 34, 34, 0.692);
   backdrop-filter: blur(0.6rem);
   border-radius: 10px;
-  /* box-shadow: 8px 5px 5px #222; */
 
   h1 {
     color: white;
@@ -99,6 +98,11 @@ const TextWrap = styled.div`
     color: white;
     border-radius: 0 0 10px 10px;
   }
+
+  @media (max-width: 768px) {
+    width: 95%;
+    padding: 0;
+  }
 `;
 
 const ArrowDown = styled.div`
@@ -106,4 +110,9 @@ const ArrowDown = styled.div`
   color: white;
   font-size: 35px;
   padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
 `;

@@ -81,6 +81,11 @@ const ProjectWrap = styled.div`
   width: 100%;
   height: 100%;
   padding-bottom: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 
 const LinkContainer = styled.div`
@@ -98,10 +103,13 @@ const LinkWrap = styled.div`
 
   /* background-repeat: no-repeat; */
   margin: 10px auto;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const SideArticleContainer = styled.div`
-  position: sticky;
   top: 0;
   width: 50%;
   /* border: 2px solid gray; */
@@ -114,6 +122,22 @@ const SideArticleContainer = styled.div`
       text-align: left;
       font-size: 18px;
       line-height: 1.5;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+
+    .article-content {
+      padding: 1rem;
+      margin: 0 auto;
+      width: 80%;
+
+      p {
+        text-align: center;
+      }
     }
   }
 `;

@@ -23,6 +23,10 @@ export default SoftSkills;
 const Container = styled.div`
   background-color: #222;
   padding: 30px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const Wrap = styled.div`
@@ -33,4 +37,9 @@ const Wrap = styled.div`
   color: white;
   text-align: left;
   padding: 2em 2em 2em 2em;
+
+  @media (max-width: 768px) {
+    width: 98%;
+    text-align: center;
+  }
 `;

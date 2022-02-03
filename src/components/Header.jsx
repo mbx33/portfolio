@@ -44,6 +44,11 @@ const MainContainer = styled.div`
   a {
     text-decoration: none;
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    justify-content: space-evenly;
+  }
 `;
 
 const Menu = styled.div`

@@ -50,7 +50,7 @@ function Skills() {
           <br />
           <p>GIT</p>
         </SkillWrap>
-        <SkillWrap>
+        <SkillWrap className="skill-wrap">
           <FaGithub style={{ color: "#4495d4" }} />
           <br />
           <p>Github</p>
@@ -70,6 +70,12 @@ const Container = styled.div`
   padding-top: 1rem;
   border-bottom: 2px solid black;
   row-gap: 3rem;
+
+  @media (max-width: 768px) {
+    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;
 
 const SkillWrap = styled.div`
@@ -83,11 +89,29 @@ const SkillWrap = styled.div`
 
   &:hover {
     box-shadow: 0 0 1.5rem hsl(0, 0%, 100%, 0.8);
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   p {
     font-size: 20px;
     color: whitesmoke;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: transform 350ms ease-in;
+    padding: 0.5rem;
+
+    &:hover {
+      box-shadow: 0 0 1rem hsl(0, 0%, 100%, 0.8);
+      transform: scale(1.1);
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 `;
