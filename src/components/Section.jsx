@@ -69,6 +69,7 @@ const MainContainer = styled.div`
   height: 100%;
   flex-direction: column;
   overflow-y: hidden;
+  gap: 4rem;
 
   @media (max-width: 768px) {
     gap: 3rem;
