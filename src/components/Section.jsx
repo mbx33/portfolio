@@ -56,7 +56,7 @@ export default Section;
 
 const Wrap = styled.div`
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,8 +68,11 @@ const MainContainer = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
   overflow-y: hidden;
+
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
 `;
 
 const TextWrap = styled.div`
@@ -80,12 +83,12 @@ const TextWrap = styled.div`
   backdrop-filter: blur(0.6rem);
   border-radius: 10px;
 
-  h1 {
+  /* h1 {
     color: white;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px 10px 0 0;
-  }
+  } */
 
   p {
     font-size: 18px;
@@ -100,9 +103,13 @@ const TextWrap = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 95%;
-    padding: 0;
-    margin: 3rem auto 0 auto;
+    width: 100%;
+    /* padding: 0; */
+    margin-top: 3rem;
+
+    p {
+      padding: 0.5rem;
+    }
   }
 `;
 
@@ -114,6 +121,6 @@ const ArrowDown = styled.div`
 
   @media (max-width: 768px) {
     font-size: 2rem;
-    padding-top: 1rem;
+    padding-top: 1rem 0 0 0;
   }
 `;
