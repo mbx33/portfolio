@@ -102,6 +102,7 @@ const TextWrap = styled.div`
   @media (max-width: 768px) {
     width: 95%;
     padding: 0;
+    margin: 3rem auto 0 auto;
   }
 `;
 
