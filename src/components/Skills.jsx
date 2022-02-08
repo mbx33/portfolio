@@ -7,6 +7,7 @@ import {
   SiReact,
   SiNodedotjs,
   SiMongodb,
+  SiFirebase,
 } from "react-icons/si";
 import { FaGitAlt, FaGithub } from "react-icons/fa";
 import Bounce from "react-reveal/Bounce";
@@ -54,6 +55,11 @@ function Skills() {
           <FaGithub style={{ color: "#4495d4" }} />
           <br />
           <p>Github</p>
+        </SkillWrap>
+        <SkillWrap className="skill-wrap">
+          <SiFirebase style={{ color: "#e9b72f" }} />
+          <br />
+          <p>Firebase</p>
         </SkillWrap>
       </Bounce>
     </Container>
