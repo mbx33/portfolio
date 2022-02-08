@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Projects from "../components/Projects";
 import Section from "../components/Section";
 import Skills from "../components/Skills";
-import SoftSkills from "../components/SoftSkills";
+// import SoftSkills from "../components/SoftSkills";
 
 function Home() {
   return (
     <Container>
       <Section />
       <Skills />
-      <SoftSkills />
+      {/* <SoftSkills /> */}
       <Projects />
     </Container>
   );

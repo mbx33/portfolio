@@ -37,6 +37,7 @@ const Wrap = styled.div`
   color: white;
   text-align: left;
   padding: 2em 2em 2em 2em;
+  
 
   @media (max-width: 768px) {
     width: 98%;

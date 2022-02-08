@@ -14,21 +14,47 @@ function Projects() {
               <br />
               <p>
                 A few of my most recent projects I've worked on. I'll post more
-                demos soon, as well as future features that I want to add to
-                them.
+                demos soon.
               </p>
+              <ol className="projects">
+                <li>
+                  <h3>Project: Money Tracker</h3>
+                  <p>
+                    A single page app that uses firebase to authenticate and
+                    store data entered by the users.
+                  </p>
+                  <a
+                    href="https://money-tracker-fc1f0.web.app/login"
+                    target="[_]blank"
+                  >
+                    Check it out!
+                  </a>
+                </li>
+              </ol>
+              <ul className="challenges">
+                <h3>{`{ < Frontend Challenges  /> }`}</h3>
+                <li>
+                  <p>Business Landing Page</p>
+                  <a
+                    href="https://github.com/mbx33/landing-page-challenge"
+                    target="[_]blank"
+                  >
+                    Github Repo
+                  </a>
+                </li>
+              </ul>
             </div>
           </Bounce>
         </SideArticleContainer>
 
         <LinkContainer>
           <LinkWrap>
-            <p>Sightseeing Tour sight</p>
+            <p>Sightseeing Tour sight..(no audio)</p>
             <ReactPlayer
               title="project1"
               width="380px"
               height="280px"
-              url="https://youtu.be/1yeCO9h_Z7A"
+              url="https://youtu.be/0HdMJELXs9c"
               frameborder="0"
               muted="true"
               controls="true"
@@ -118,10 +144,30 @@ const SideArticleContainer = styled.div`
     width: 65%;
     margin: 2em auto;
 
+    a {
+      color: green;
+      font-size: 1.5rem;
+    }
+
     p {
-      text-align: left;
+      text-align: center;
       font-size: 18px;
       line-height: 1.5;
+    }
+
+    .projects {
+      padding-top: 2rem;
+
+      li {
+        list-style-type: none;
+      }
+    }
+    .challenges {
+      padding-top: 6rem;
+      li {
+        padding: 1rem 0;
+        list-style-type: none;
+      }
     }
   }
 
@@ -137,6 +183,12 @@ const SideArticleContainer = styled.div`
 
       p {
         text-align: center;
+      }
+    }
+
+    .challenges {
+      h3 {
+        font-size: 1.1rem;
       }
     }
   }

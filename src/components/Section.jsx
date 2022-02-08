@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-// import { RiArrowDownSLine } from "react-icons/ri";
 import { BsArrowBarDown } from "react-icons/bs";
 import { Link } from "react-scroll";
 
@@ -10,6 +9,9 @@ import Header from "./Header";
 import "../index.css";
 
 function Section() {
+
+
+  
   return (
     <Wrap>
       <Header />
@@ -70,6 +72,7 @@ const MainContainer = styled.div`
   flex-direction: column;
   overflow-y: hidden;
   gap: 4rem;
+  
 
   @media (max-width: 768px) {
     gap: 3rem;
@@ -84,13 +87,6 @@ const TextWrap = styled.div`
   backdrop-filter: blur(0.6rem);
   border-radius: 10px;
 
-  /* h1 {
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px 10px 0 0;
-  } */
-
   p {
     font-size: 18px;
     letter-spacing: 1px;
@@ -101,6 +97,7 @@ const TextWrap = styled.div`
     width: 100%;
     color: white;
     border-radius: 0 0 10px 10px;
+    
   }
 
   @media (max-width: 768px) {
