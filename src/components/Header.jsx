@@ -16,6 +16,7 @@ function Header() {
         <Link to="links" spy={true} smooth={true} duration={500}>
           <a href="/">Socials</a>
         </Link>
+        <a href="mailto:mbx33@hotmail.com?subject=Hello%20Matt!">Contact</a>
         {/* <a href="/">Contact</a> */}
         {/* <a href="/">About</a> */}
       </Menu>

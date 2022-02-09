@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Bounce from "react-reveal/Bounce";
 import ReactPlayer from "react-player/lazy";
 
 function Projects() {
@@ -8,43 +7,41 @@ function Projects() {
     <Container id="projects">
       <ProjectWrap>
         <SideArticleContainer>
-          <Bounce left>
-            <div className="article-content">
-              <h2>My Recent Projects</h2>
-              <br />
-              <p>
-                A few of my most recent projects I've worked on. I'll post more
-                demos soon.
-              </p>
-              <ol className="projects">
-                <li>
-                  <h3>Project: Money Tracker</h3>
-                  <p>
-                    A single page app that uses firebase to authenticate and
-                    store data entered by the users.
-                  </p>
-                  <a
-                    href="https://money-tracker-fc1f0.web.app/login"
-                    target="[_]blank"
-                  >
-                    Check it out!
-                  </a>
-                </li>
-              </ol>
-              <ul className="challenges">
-                <h3>{`< Frontend Challenges />`}</h3>
-                <li>
-                  <p>Business Landing Page</p>
-                  <a
-                    href="https://github.com/mbx33/landing-page-challenge"
-                    target="[_]blank"
-                  >
-                    Github Repo
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </Bounce>
+          <div className="article-content">
+            <h2>My Recent Projects</h2>
+            <br />
+            <p>
+              A few of my most recent projects I've worked on. I'll post more
+              demos soon.
+            </p>
+            <ol className="projects">
+              <li>
+                <h3>Project: Money Tracker</h3>
+                <p>
+                  A single page app that uses firebase to authenticate and store
+                  data entered by the users.
+                </p>
+                <a
+                  href="https://money-tracker-fc1f0.web.app/login"
+                  target="[_]blank"
+                >
+                  Check it out!
+                </a>
+              </li>
+            </ol>
+            <ul className="challenges">
+              <h3>{`< Frontend Challenges />`}</h3>
+              <li>
+                <p>Business Landing Page</p>
+                <a
+                  href="https://github.com/mbx33/landing-page-challenge"
+                  target="[_]blank"
+                >
+                  Github Repo
+                </a>
+              </li>
+            </ul>
+          </div>
         </SideArticleContainer>
 
         <LinkContainer>
