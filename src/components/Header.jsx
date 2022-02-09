@@ -14,7 +14,7 @@ function Header() {
           <a href="/">Projects</a>
         </Link>
         <Link to="links" spy={true} smooth={true} duration={500}>
-          <a href="/">Links</a>
+          <a href="/">Socials</a>
         </Link>
         {/* <a href="/">Contact</a> */}
         {/* <a href="/">About</a> */}

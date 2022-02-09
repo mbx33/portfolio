@@ -32,7 +32,7 @@ function Projects() {
                 </li>
               </ol>
               <ul className="challenges">
-                <h3>{`{ < Frontend Challenges  /> }`}</h3>
+                <h3>{`< Frontend Challenges />`}</h3>
                 <li>
                   <p>Business Landing Page</p>
                   <a

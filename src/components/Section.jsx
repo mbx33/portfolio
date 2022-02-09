@@ -9,9 +9,6 @@ import Header from "./Header";
 import "../index.css";
 
 function Section() {
-
-
-  
   return (
     <Wrap>
       <Header />
@@ -72,7 +69,6 @@ const MainContainer = styled.div`
   flex-direction: column;
   overflow-y: hidden;
   gap: 4rem;
-  
 
   @media (max-width: 768px) {
     gap: 3rem;
@@ -84,7 +80,7 @@ const TextWrap = styled.div`
   padding: 18px;
   width: 45%;
   background-color: rgba(34, 34, 34, 0.692);
-  backdrop-filter: blur(0.6rem);
+  backdrop-filter: blur(0.12rem);
   border-radius: 10px;
 
   p {
@@ -97,7 +93,6 @@ const TextWrap = styled.div`
     width: 100%;
     color: white;
     border-radius: 0 0 10px 10px;
-    
   }
 
   @media (max-width: 768px) {
