@@ -59,7 +59,7 @@ const Wrap = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/desert.jpg");
+  background-image: url("/images/desert.webp");
   overflow-y: hidden;
 `;
 
@@ -111,6 +111,7 @@ const ArrowDown = styled.div`
   color: white;
   font-size: 35px;
   padding-bottom: 50px;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 2rem;

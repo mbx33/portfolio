@@ -8,7 +8,7 @@ function Projects() {
       <ProjectWrap>
         <SideArticleContainer>
           <div className="article-content">
-            <h2>My Recent Projects</h2>
+            <h2>Recent Projects</h2>
             <br />
             <p>
               A few of my most recent projects I've worked on. I'll post more
@@ -135,8 +135,11 @@ const LinkWrap = styled.div`
 const SideArticleContainer = styled.div`
   top: 0;
   width: 50%;
-  /* border: 2px solid gray; */
 
+  h2 {
+    letter-spacing: 0.3rem;
+    text-align: center;
+  }
   .article-content {
     width: 65%;
     margin: 2em auto;
@@ -147,7 +150,7 @@ const SideArticleContainer = styled.div`
     }
 
     p {
-      text-align: center;
+      /* text-align: center; */
       font-size: 18px;
       line-height: 1.5;
     }
@@ -171,7 +174,7 @@ const SideArticleContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     padding: 1rem;
-    text-align: center;
+    /* text-align: center; */
 
     .article-content {
       padding: 1rem;
@@ -179,7 +182,7 @@ const SideArticleContainer = styled.div`
       width: 80%;
 
       p {
-        text-align: center;
+        /* text-align: center; */
       }
     }
 

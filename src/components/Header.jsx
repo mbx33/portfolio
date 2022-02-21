@@ -6,7 +6,7 @@ function Header() {
     <MainContainer>
       <div className="logo">
         <a href="/">
-          <h1>Matt Baxter</h1>
+          <h1>Matthew Baxter</h1>
         </a>
       </div>
       <Menu>
