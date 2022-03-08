@@ -108,7 +108,7 @@ const SkillWrap = styled.div`
     margin: 0 auto;
     overflow: hidden;
     transition: transform 350ms ease-in;
-    padding: 0.5rem;
+    padding: 1rem 4rem 0;
 
     &:hover {
       box-shadow: 0 0 1rem hsl(0, 0%, 100%, 0.8);

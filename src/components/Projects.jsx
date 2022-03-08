@@ -11,8 +11,8 @@ function Projects() {
             <h2>Recent Projects</h2>
             <br />
             <p>
-              A few of my most recent projects I've worked on. I'll post more
-              demos soon.
+              A few of my most recent projects I've worked on. More demos coming
+              soon.
             </p>
             <ol className="projects">
               <li>
@@ -145,7 +145,7 @@ const SideArticleContainer = styled.div`
     margin: 2em auto;
 
     a {
-      color: green;
+      color: orange;
       font-size: 1.5rem;
     }
 
