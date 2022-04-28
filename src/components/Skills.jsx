@@ -91,6 +91,7 @@ const SkillWrap = styled.div`
   border-radius: 8px;
   overflow: hidden;
   transition: transform 350ms ease-in;
+  text-align: center;
 
   &:hover {
     box-shadow: 0 0 1.5rem hsl(0, 0%, 100%, 0.8);
