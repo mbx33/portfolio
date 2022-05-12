@@ -27,11 +27,11 @@ export default Footer;
 const Menu = styled.div`
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   font-size: 60px;
-  background-image: url("/images/ground.png");
+  /* background-image: url("/images/ground.png");
   background-repeat: no-repeat;
-  background-size: 29em auto;
+  background-size: 29em auto; */
 
   a {
     padding: 10px 70px;

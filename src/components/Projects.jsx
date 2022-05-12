@@ -107,6 +107,10 @@ const ProjectWrap = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
+    /* padding: 2rem; */
+  }
+
+  @media (max-width: 425px) {
     padding: 0;
   }
 `;
@@ -118,6 +122,11 @@ const LinkContainer = styled.div`
   align-items: center;
   width: 50%;
   /* border: 2px solid red; */
+
+  @media (max-width: 400px) {
+    width: 100vw;
+    /* padding: 0 1rem; */
+  }
 `;
 
 const LinkWrap = styled.div`
@@ -128,7 +137,7 @@ const LinkWrap = styled.div`
   margin: 10px auto;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
   }
 `;
 

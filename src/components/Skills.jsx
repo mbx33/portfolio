@@ -7,6 +7,7 @@ import {
   SiReact,
   SiNodedotjs,
   SiMongodb,
+  SiPostgresql,
 } from "react-icons/si";
 import { FaGitAlt, FaGithub } from "react-icons/fa";
 import Bounce from "react-reveal/Bounce";
@@ -39,6 +40,11 @@ function Skills() {
           <SiMongodb style={{ color: "green" }} />
           <br />
           <p>Mongo DB</p>
+        </SkillWrap>
+        <SkillWrap>
+          <SiPostgresql style={{ color: "blue" }} />
+          <br />
+          <p>Postgres</p>
         </SkillWrap>
         <SkillWrap>
           <SiReact style={{ color: "blue" }} />
@@ -76,10 +82,18 @@ const Container = styled.div`
   border-bottom: 2px solid black;
   row-gap: 3rem;
 
-  @media (max-width: 768px) {
-    /* flex-direction: column; */
+  @media (max-width: 1110px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+    /* flex-direction: column; */
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media (max-width: 420px) {
+    grid-template-columns: 1fr 1fr;
   }
 `;
 
