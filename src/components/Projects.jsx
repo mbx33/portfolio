@@ -11,17 +11,46 @@ function Projects() {
 						<h2>Recent Projects</h2>
 						<br />
 						<p>
-							A few of my most recent projects I've worked on. More demos coming soon.
+							A few of my most recent projects I've worked on. More demos
+							coming soon.
 						</p>
 						<ol className="projects">
 							<li>
 								<h3>Project: Money Tracker</h3>
 								<p>
-									A single page app that uses firebase to authenticate and store data
-									entered by the users.
+									A single page app that uses firebase to authenticate
+									and store data entered by the users.
 								</p>
-								<a href="https://money-tracker-fc1f0.web.app/login" target="[_]blank">
+								<a
+									href="https://money-tracker-fc1f0.web.app/login"
+									target="[_]blank"
+								>
 									Check it out!
+								</a>
+							</li>
+						</ol>
+						<ol className="projects">
+							<li>
+								<h3>Project: Ask Leonardo</h3>
+								<p>
+									Users can ask any question or give a command in the
+									input line and get a response from an AI algorithm
+								</p>
+								<a
+									href="http://serene-reef-46633.herokuapp.com/"
+									target="[_]blank"
+								>
+									Check it out!
+								</a>
+								<a
+									style={{
+										display: 'block',
+										marginTop: '.6rem',
+									}}
+									href="https://github.com/mbx33/openai-react.git"
+									target="[_]blank"
+								>
+									Github repo
 								</a>
 							</li>
 						</ol>
