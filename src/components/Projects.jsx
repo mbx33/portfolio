@@ -34,7 +34,7 @@ function Projects() {
 								<h3>Project: Ask Leonardo</h3>
 								<p>
 									Users can ask any question or give a command in the
-									input line and get a response from an AI algorithm
+									input line and get a response from an AI
 								</p>
 								<a
 									href="http://serene-reef-46633.herokuapp.com/"

@@ -32,6 +32,11 @@ function Skills() {
 					<p>Javascript</p>
 				</SkillWrap>
 				<SkillWrap>
+					<SiReact style={{ color: 'blue' }} />
+					<br />
+					<p>React</p>
+				</SkillWrap>
+				<SkillWrap>
 					<SiNodedotjs style={{ color: 'green' }} />
 					<br />
 					<p>Node JS</p>
@@ -45,11 +50,6 @@ function Skills() {
 					<SiPostgresql style={{ color: 'blue' }} />
 					<br />
 					<p>Postgres</p>
-				</SkillWrap>
-				<SkillWrap>
-					<SiReact style={{ color: 'blue' }} />
-					<br />
-					<p>React</p>
 				</SkillWrap>
 				<SkillWrap>
 					<FaGitAlt style={{ color: 'red' }} />
