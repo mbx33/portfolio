@@ -180,7 +180,8 @@ const SideArticleContainer = styled.div`
 		margin: 2em auto;
 
 		a {
-			color: blue;
+			color: #3195ff;
+
 			font-size: 1.5rem;
 			padding: 0.4rem;
 		}
