@@ -118,6 +118,8 @@ function Projects() {
 export default Projects;
 
 const Container = styled.div`
+	background-color: #000000;
+	background-image: url('/images/gun-metal.png');
 	padding: 2em 0;
 	height: 100%;
 	width: 100%;
@@ -146,7 +148,6 @@ const LinkContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	width: 50%;
-	/* border: 2px solid red; */
 
 	@media (max-width: 400px) {
 		width: 100vw;
@@ -179,8 +180,9 @@ const SideArticleContainer = styled.div`
 		margin: 2em auto;
 
 		a {
-			color: orange;
+			color: blue;
 			font-size: 1.5rem;
+			padding: 0.4rem;
 		}
 
 		p {
@@ -190,17 +192,38 @@ const SideArticleContainer = styled.div`
 		}
 
 		.projects {
-			padding-top: 2rem;
+			box-shadow: 0 0 0.4rem #fff;
+			margin: 1rem 0;
+			padding: 2rem 1rem;
+
+			h3 {
+				padding: 0.4rem;
+			}
+
+			p {
+				padding: 0.4rem;
+			}
 
 			li {
 				list-style-type: none;
 			}
 		}
 		.challenges {
-			padding-top: 6rem;
+			box-shadow: 0 0 0.4rem #fff;
+			margin: 2rem 0;
+			padding: 2rem 1rem;
+
 			li {
 				padding: 1rem 0;
 				list-style-type: none;
+			}
+
+			li > p {
+				padding: 0.7rem 0;
+			}
+
+			li > a {
+				padding: 1rem 0;
 			}
 		}
 	}

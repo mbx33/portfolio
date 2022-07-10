@@ -69,7 +69,8 @@ function Skills() {
 export default Skills;
 
 const Container = styled.div`
-	background-color: #222;
+	background-color: #000000;
+	background-image: url('/images/gun-metal.png');
 	display: flex;
 	justify-content: center;
 	padding-bottom: 2rem;
@@ -103,7 +104,6 @@ const SkillWrap = styled.div`
 	text-align: center;
 
 	&:hover {
-		box-shadow: 0 0 1.5rem hsl(0, 0%, 100%, 0.8);
 		transform: scale(1.2);
 	}
 
