@@ -25,6 +25,7 @@ function Footer() {
 export default Footer;
 
 const Menu = styled.div`
+	background-color: #3195ff;
 	display: flex;
 	justify-content: center;
 	width: 100vw;
