@@ -88,8 +88,11 @@ const Container = styled.div`
 		/* display: grid; */
 		grid-template-columns: 1fr 1fr 1fr;
 	}
-	@media (max-width: 420px) {
+	@media (max-width: 570px) {
 		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 405px) {
+		row-gap: 1.5rem;
 	}
 `;
 
@@ -121,8 +124,8 @@ const SkillWrap = styled.div`
 		padding: 1rem 4rem 0;
 
 		&:hover {
-			box-shadow: 0 0 1rem hsl(0, 0%, 100%, 0.8);
-			transform: scale(1.1);
+			/* box-shadow: 0 0 1rem hsl(0, 0%, 100%, 0.8); */
+			transform: scale(1.3);
 		}
 
 		p {
