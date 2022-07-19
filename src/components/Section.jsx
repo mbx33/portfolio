@@ -81,7 +81,6 @@ const TextWrap = styled.div`
 	width: 40%;
 	background-color: rgba(34, 34, 34);
 	background-image: url('/images/gun-metal.png');
-	/* backdrop-filter: blur(0.12rem); */
 	border-radius: 10px;
 
 	p {
@@ -96,10 +95,10 @@ const TextWrap = styled.div`
 		border-radius: 0 0 10px 10px;
 	}
 
-	@media (max-width: 768px) {
-		width: 100%;
+	@media (max-width: 810px) {
+		width: 80%;
 		/* padding: 0; */
-		margin-top: 3rem;
+		margin-top: 6rem;
 
 		p {
 			padding: 0.5rem;

@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import ReactPlayer from 'react-player/lazy';
 
 function Projects() {
 	return (
 		<Container id="projects">
 			<ProjectWrap>
+				<div className="p-title article-content">
+					<h2>Recent Projects</h2>
+					<br />
+					<p>
+						A few of my most recent projects I've worked on. More demos coming
+						soon.
+					</p>
+				</div>
 				<SideArticleContainer>
 					<div className="article-content">
-						<h2>Recent Projects</h2>
-						<br />
-						<p>
-							A few of my most recent projects I've worked on. More demos
-							coming soon.
-						</p>
 						<ol className="projects">
 							<li>
 								<h3>Project: Money Tracker</h3>
@@ -68,48 +69,6 @@ function Projects() {
 						</ul>
 					</div>
 				</SideArticleContainer>
-
-				<LinkContainer>
-					<LinkWrap>
-						<p>Sightseeing Tour sight..(no audio)</p>
-						<ReactPlayer
-							title="project1"
-							width="380px"
-							height="280px"
-							url="https://youtu.be/0HdMJELXs9c"
-							frameborder="0"
-							muted="true"
-							controls="true"
-							style={{ border: '2px solid white' }}
-						/>
-					</LinkWrap>
-					<LinkWrap>
-						<p>Coming Soon..</p>
-						<ReactPlayer
-							title="project1"
-							width="380px"
-							height="280px"
-							url="#"
-							frameborder="0"
-							muted="true"
-							controls="true"
-							style={{ border: '2px solid white' }}
-						/>
-					</LinkWrap>
-					<LinkWrap>
-						<p>Coming Soon..</p>
-						<ReactPlayer
-							title="project1"
-							width="380px"
-							height="280px"
-							url="#"
-							frameborder="0"
-							muted="true"
-							controls="true"
-							style={{ border: '2px solid white' }}
-						/>
-					</LinkWrap>
-				</LinkContainer>
 			</ProjectWrap>
 		</Container>
 	);
@@ -120,21 +79,24 @@ export default Projects;
 const Container = styled.div`
 	background-color: #000000;
 	background-image: url('/images/gun-metal.png');
-	padding: 2em 0;
-	height: 100%;
-	width: 100%;
+	padding: 2em 0 0;
 	color: white;
 `;
 
 const ProjectWrap = styled.div`
-	display: flex;
-	width: 100%;
-	height: 100%;
 	padding-bottom: 20px;
+
+	.p-title {
+		font-size: 1.3rem;
+		text-align: center;
+	}
+
+	.p-title h2 {
+		font-size: 2.5rem;
+	}
 
 	@media (max-width: 768px) {
 		flex-direction: column;
-		/* padding: 2rem; */
 	}
 
 	@media (max-width: 425px) {
@@ -142,34 +104,10 @@ const ProjectWrap = styled.div`
 	}
 `;
 
-const LinkContainer = styled.div`
-	display: flex;
-	justify-content: space-evenly;
-	flex-direction: column;
-	align-items: center;
-	width: 50%;
-
-	@media (max-width: 400px) {
-		width: 100vw;
-		/* padding: 0 1rem; */
-	}
-`;
-
-const LinkWrap = styled.div`
-	width: 50%;
-	height: 100%;
-
-	/* background-repeat: no-repeat; */
-	margin: 10px auto;
-
-	@media (max-width: 768px) {
-		width: 90%;
-	}
-`;
-
 const SideArticleContainer = styled.div`
 	top: 0;
-	width: 50%;
+	width: 70%;
+	margin: 0 auto;
 
 	h2 {
 		letter-spacing: 0.3rem;
@@ -187,7 +125,6 @@ const SideArticleContainer = styled.div`
 		}
 
 		p {
-			/* text-align: center; */
 			font-size: 18px;
 			line-height: 1.5;
 		}
@@ -232,7 +169,6 @@ const SideArticleContainer = styled.div`
 	@media (max-width: 768px) {
 		width: 100%;
 		padding: 1rem;
-		/* text-align: center; */
 
 		.article-content {
 			padding: 1rem;
