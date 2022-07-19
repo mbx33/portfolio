@@ -8,6 +8,7 @@
 body {
 	width: 100%;
 	overflow-x: hidden;
+	/* color: hsl(211, 100%, 60%); */
 }
 
 @keyframes animateDown {

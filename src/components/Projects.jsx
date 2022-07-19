@@ -23,6 +23,7 @@ function Projects() {
 									and store data entered by the users.
 								</p>
 								<a
+									className="btn"
 									href="https://money-tracker-fc1f0.web.app/login"
 									target="[_]blank"
 								>
@@ -38,15 +39,17 @@ function Projects() {
 									input line and get a response from an AI
 								</p>
 								<a
+									className="btn"
 									href="http://serene-reef-46633.herokuapp.com/"
 									target="[_]blank"
 								>
 									Check it out!
 								</a>
+
 								<a
+									className="btn"
 									style={{
-										display: 'block',
-										marginTop: '.6rem',
+										marginLeft: '1rem',
 									}}
 									href="https://github.com/mbx33/openai-react.git"
 									target="[_]blank"
@@ -57,15 +60,14 @@ function Projects() {
 						</ol>
 						<ul className="challenges">
 							<h3>{`< Frontend Challenges />`}</h3>
-							<li>
-								<p>Business Landing Page</p>
-								<a
-									href="https://mbx33.github.io/landing-page-challenge/"
-									target="[_]blank"
-								>
-									Github Repo
-								</a>
-							</li>
+							<p>Business Landing Page</p>
+							<a
+								className="btn"
+								href="https://mbx33.github.io/landing-page-challenge/"
+								target="[_]blank"
+							>
+								Github Repo
+							</a>
 						</ul>
 					</div>
 				</SideArticleContainer>
@@ -117,11 +119,22 @@ const SideArticleContainer = styled.div`
 		width: 65%;
 		margin: 2em auto;
 
-		a {
-			color: #3195ff;
-
-			font-size: 1.5rem;
+		.btn {
+			background-color: hsl(211, 100%, 60%);
 			padding: 0.4rem;
+			border-radius: 0.4rem;
+		}
+
+		.btn:hover,
+		.btn:active {
+			background-color: hsl(211, 100%, 60%, 0.8);
+			box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 1.5rem;
 		}
 
 		p {
@@ -139,7 +152,7 @@ const SideArticleContainer = styled.div`
 			}
 
 			p {
-				padding: 0.4rem;
+				padding: 1.4rem 0;
 			}
 
 			li {
@@ -151,17 +164,13 @@ const SideArticleContainer = styled.div`
 			margin: 2rem 0;
 			padding: 2rem 1rem;
 
-			li {
+			h3 {
 				padding: 1rem 0;
 				list-style-type: none;
 			}
 
-			li > p {
+			p {
 				padding: 0.7rem 0;
-			}
-
-			li > a {
-				padding: 1rem 0;
 			}
 		}
 	}
