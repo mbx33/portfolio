@@ -78,7 +78,7 @@ const MainContainer = styled.div`
 const TextWrap = styled.div`
 	margin: 15vh auto 0 auto;
 	padding: 18px;
-	width: 45%;
+	width: 40%;
 	background-color: rgba(34, 34, 34);
 	background-image: url('/images/gun-metal.png');
 	/* backdrop-filter: blur(0.12rem); */
