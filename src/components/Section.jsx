@@ -21,17 +21,17 @@ function Section() {
 							create better designs. I have a desire to keep learning and
 							building better designed websites.
 						</p>
-						<p>
+						{/* <p>
 							I have lived in Russia, and love travelling to other
-							countries. Living in other countries has helped me and my
-							passion for bringing the world together through technology.
-						</p>
+							countries. Living abroad has helped me and my passion for
+							bringing the world together through technology.
+						</p> */}
 					</Fade>
 				</TextWrap>
 
 				<ArrowDown>
 					<h4>Skills</h4>
-					<br />
+					<br /> 
 					<h3>Projects</h3>
 
 					<Link to="skills" spy={true} smooth={true} duration={500}>
@@ -97,7 +97,6 @@ const TextWrap = styled.div`
 
 	@media (max-width: 810px) {
 		width: 80%;
-		/* padding: 0; */
 		margin-top: 6rem;
 
 		p {

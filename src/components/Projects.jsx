@@ -38,24 +38,23 @@ function Projects() {
 									Users can ask any question or give a command in the
 									input line and get a response from an AI
 								</p>
-								<a
-									className="btn"
-									href="http://serene-reef-46633.herokuapp.com/"
-									target="[_]blank"
-								>
-									Check it out!
-								</a>
+								<div className="btn-group">
+									<a
+										className="btn"
+										href="http://serene-reef-46633.herokuapp.com/"
+										target="[_]blank"
+									>
+										Check it out!
+									</a>
 
-								<a
-									className="btn"
-									style={{
-										marginLeft: '1rem',
-									}}
-									href="https://github.com/mbx33/openai-react.git"
-									target="[_]blank"
-								>
-									Github repo
-								</a>
+									<a
+										className="btn"
+										href="https://github.com/mbx33/openai-react.git"
+										target="[_]blank"
+									>
+										Github repo
+									</a>
+								</div>
 							</li>
 						</ol>
 						<ul className="challenges">
@@ -171,6 +170,29 @@ const SideArticleContainer = styled.div`
 
 			p {
 				padding: 0.7rem 0;
+			}
+		}
+
+		.btn-group a:nth-child(2) {
+			margin-left: 1rem;
+
+			@media (max-width: 488px) {
+				margin: 1rem 0 0;
+			}
+		}
+
+		@media (max-width: 488px) {
+			.projects .btn-group {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				max-width: 60%;
+			}
+		}
+
+		@media (max-width: 411px) {
+			.projects .btn-group {
+				max-width: 75%;
 			}
 		}
 	}
