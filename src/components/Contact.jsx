@@ -7,7 +7,7 @@ function Contact() {
 		<>
 			<Container id="contact">
 				<div className="title">
-					<h2>Contact Me</h2>
+					<h2>Send me a message</h2>
 				</div>
 				<form name="contact" className="form" method="POST">
 					<input type="hidden" name="form-name" value="contact" />
@@ -22,6 +22,7 @@ function Contact() {
 							type="text"
 							name="name"
 							placeholder="Name"
+							required
 						/>
 					</FloatingLabel>
 					<FloatingLabel controlId="floatingInputEmail" label="Email">
@@ -31,6 +32,7 @@ function Contact() {
 							type="email"
 							name="email"
 							placeholder="email"
+							required
 						/>
 					</FloatingLabel>
 					<FloatingLabel
@@ -43,6 +45,7 @@ function Contact() {
 							placeholder="Leave a comment here"
 							style={{ height: '120px', fontSize: '1.2rem' }}
 							name="message"
+							required
 						/>
 					</FloatingLabel>
 					<button className="btn" type="submit">

@@ -29,6 +29,7 @@ function Footer() {
 export default Footer;
 
 const Menu = styled.div`
+	background-image: url('/images/gun-metal.png');
 	background-color: #3195ff;
 	display: flex;
 	justify-content: center;
@@ -50,6 +51,7 @@ const Menu = styled.div`
 			&:hover,
 			&:active {
 				color: black;
+
 				opacity: 0.7;
 			}
 		}
