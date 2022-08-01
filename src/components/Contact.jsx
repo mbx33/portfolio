@@ -9,7 +9,7 @@ function Contact() {
 				<div className="title">
 					<h2>Contact Me</h2>
 				</div>
-				<form name="contact" className="form">
+				<form name="contact" className="form" method="POST">
 					<input type="hidden" name="form-name" value="contact" />
 					<FloatingLabel
 						controlId="floatingInputName"
@@ -17,6 +17,7 @@ function Contact() {
 						className="mb-3"
 					>
 						<Form.Control
+							as="input"
 							className="input"
 							type="text"
 							name="name"
@@ -25,6 +26,7 @@ function Contact() {
 					</FloatingLabel>
 					<FloatingLabel controlId="floatingInputEmail" label="Email">
 						<Form.Control
+							as="input"
 							className="input"
 							type="email"
 							name="email"
