@@ -4,18 +4,16 @@ import Demos from '../components/Demos';
 import Projects from '../components/Projects';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
-// import Contact from '../components/Contact';
-// import SoftSkills from "../components/SoftSkills";
+import Contact from '../components/Contact';
 
 function Home() {
 	return (
 		<Container>
 			<Hero />
 			<Skills />
-			{/* <SoftSkills /> */}
 			<Projects />
 			<Demos />
-			{/* <Contact /> */}
+			<Contact />
 		</Container>
 	);
 }
