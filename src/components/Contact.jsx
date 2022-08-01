@@ -1,31 +1,54 @@
 import styled from 'styled-components';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
 
 function Contact() {
 	return (
-		<Container>
-			<div className="title">
-				<h2>Contact Me</h2>
-			</div>
-			<form name="contact" className="form">
-				<input type="hidden" name="form-name" value="contact" />
-				<div className="info">
-					<label>
-						Name: <input type="text" name="name" />
-					</label>
-					<label>
-						Email: <input type="email" name="email" />
-					</label>
+		<>
+			<Container id="contact">
+				<div className="title">
+					<h2>Contact Me</h2>
 				</div>
-				<div className="message">
-					<label>
-						Message: <textarea name="message" rows="4" cols="61"></textarea>
-					</label>
-				</div>
-				<button className="btn" type="submit">
-					Send
-				</button>
-			</form>
-		</Container>
+				<form name="contact" className="form">
+					<input type="hidden" name="form-name" value="contact" />
+					<FloatingLabel
+						controlId="floatingInputName"
+						label="Name"
+						className="mb-3"
+					>
+						<Form.Control
+							className="input"
+							type="text"
+							name="name"
+							placeholder="Name"
+						/>
+					</FloatingLabel>
+					<FloatingLabel controlId="floatingInputEmail" label="Email">
+						<Form.Control
+							className="input"
+							type="email"
+							name="email"
+							placeholder="email"
+						/>
+					</FloatingLabel>
+					<FloatingLabel
+						controlId="message"
+						label="Comments"
+						style={{ marginTop: '2rem' }}
+					>
+						<Form.Control
+							as="textarea"
+							placeholder="Leave a comment here"
+							style={{ height: '120px', fontSize: '1.2rem' }}
+							name="message"
+						/>
+					</FloatingLabel>
+					<button className="btn" type="submit">
+						Send
+					</button>
+				</form>
+			</Container>
+		</>
 	);
 }
 
@@ -34,53 +57,20 @@ export default Contact;
 const Container = styled.section`
 	background-color: #000000;
 	background-image: url('/images/gun-metal.png');
-	padding: 1em 0 2rem;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	padding-bottom: 2rem;
 
 	.title {
-		font-size: 2.2rem;
+		text-align: center;
+		color: #fff;
 	}
 
 	.form {
-		/* color: #3195ff; */
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		width: 60%;
+		margin: 0 auto;
+	}
 
-		.info {
-			display: flex;
-			gap: 2rem;
-			font-size: 1.6rem;
-			padding: 1rem;
-
-			input {
-				font-size: inherit;
-				padding: 0.2rem;
-				border-radius: 0.8rem;
-				border: none;
-			}
-		}
-
-		.message {
-			display: flex;
-			gap: 2rem;
-			font-size: 1.6rem;
-			padding: 1rem;
-			width: 80%;
-
-			textarea {
-				font-size: 1.6rem;
-				padding: 0.6rem;
-				border-radius: 0.8rem;
-				border: none;
-			}
-		}
+	.input {
+		font-size: 1.6rem;
 	}
 
 	.btn {
@@ -99,6 +89,20 @@ const Container = styled.section`
 		color: #fff;
 		text-decoration: none;
 		font-size: 1.5rem;
-		margin-left: 44rem;
+		margin-top: 1rem;
+	}
+
+	@media (max-width: 620px) {
+		.form {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.form {
+			width: 98%;
+			margin: 0 auto;
+		}
 	}
 `;

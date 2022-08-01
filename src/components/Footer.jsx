@@ -1,22 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SiGithub, SiLinkedin, SiYoutube } from 'react-icons/si';
+import { HiOutlineMail } from 'react-icons/hi';
 
 function Footer() {
 	return (
 		<Menu className="footer" id="links">
 			<a href="https://github.com/mbx33" target="_blank" rel="noreferrer">
-				<SiGithub style={{ color: 'white' }} />
+				<SiGithub className="icon" />
 			</a>
 			<a
 				href="https://www.linkedin.com/in/matt-baxter33/"
 				target="_blank"
 				rel="noreferrer"
 			>
-				<SiLinkedin style={{ color: 'white' }} />
+				<SiLinkedin className="icon" />
 			</a>
 			<a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-				<SiYoutube style={{ color: 'white' }} />
+				<SiYoutube className="icon" />
+			</a>
+			<a href="mailto:mbx33@hotmail.com?subject=Hello%20Matt!">
+				<HiOutlineMail className="icon" />
 			</a>
 		</Menu>
 	);
@@ -39,6 +43,16 @@ const Menu = styled.div`
 		letter-spacing: 1px;
 		text-decoration: none;
 		margin: 0 1em;
+
+		.icon {
+			color: whitesmoke;
+
+			&:hover,
+			&:active {
+				color: black;
+				opacity: 0.7;
+			}
+		}
 	}
 
 	@media (max-width: 768px) {
@@ -50,8 +64,11 @@ const Menu = styled.div`
 		}
 	}
 
+	@media (max-width: 575px) {
+		font-size: 2.7rem;
+	}
+
 	@media (max-width: 450px) {
-		font-size: 2.3rem;
-		/* display: grid; */
+		font-size: 2rem;
 	}
 `;
