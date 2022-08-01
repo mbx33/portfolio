@@ -16,16 +16,11 @@ function Hero() {
 				<TextWrap>
 					<Fade right>
 						<p>
-							I've been designing different websites for over 5 years now.
-							I've just started to develop the skills necessary to code and
-							create better designs. I have a desire to keep learning and
-							building better designed websites.
+							I've been building, and designing websites for over 5 years
+							now. I've just started to develop the skills necessary to code
+							and create better designs. I love to learn, and want to
+							continue to innovate on my website designs and builds.
 						</p>
-						{/* <p>
-							I have lived in Russia, and love travelling to other
-							countries. Living abroad has helped me and my passion for
-							bringing the world together through technology.
-						</p> */}
 					</Fade>
 				</TextWrap>
 
