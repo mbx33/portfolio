@@ -4,6 +4,7 @@ import Demos from '../components/Demos';
 import Projects from '../components/Projects';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
+import Contact from '../components/Contact';
 // import SoftSkills from "../components/SoftSkills";
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
 			{/* <SoftSkills /> */}
 			<Projects />
 			<Demos />
+			<Contact />
 		</Container>
 	);
 }
