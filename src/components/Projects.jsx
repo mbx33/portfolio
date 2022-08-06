@@ -59,7 +59,7 @@ function Projects() {
 						</ol>
 						<ul className="challenges">
 							<h3>{`< Frontend Challenges />`}</h3>
-							<p>Business Landing Page</p>
+							<p>A responsive landing page for business</p>
 							<a
 								className="btn"
 								href="https://mbx33.github.io/landing-page-challenge/"

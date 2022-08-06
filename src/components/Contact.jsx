@@ -7,9 +7,14 @@ function Contact() {
 		<>
 			<Container id="contact">
 				<div className="title">
-					<h2>Send me a message</h2>
+					<h2>Contact Me</h2>
 				</div>
-				<form name="contact" className="form" method="POST">
+				<form
+					name="contact"
+					className="form"
+					method="POST"
+					// action="/pages/success"
+				>
 					<input type="hidden" name="form-name" value="contact" />
 					<FloatingLabel
 						controlId="floatingInputName"
