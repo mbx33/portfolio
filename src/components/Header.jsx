@@ -5,19 +5,29 @@ function Header() {
 	return (
 		<MainContainer>
 			<div className="logo">
-				<a href="/">
-					<h1>Matthew Baxter</h1>
-				</a>
+				<h1>Matthew Baxter</h1>
 			</div>
 			<Menu>
-				<Link to="projects" spy={true} smooth={true} duration={500}>
-					<a href="/">Projects</a>
+				<Link
+					to="projects"
+					spy={true}
+					smooth={true}
+					duration={500}
+					className="link"
+				>
+					Projects
 				</Link>
-				<Link to="links" spy={true} smooth={true} duration={500}>
-					<a href="/">Socials</a>
+				<Link to="links" spy={true} smooth={true} duration={500} className="link">
+					Socials
 				</Link>
-				<Link to="contact" spy={true} smooth={true} duration={500} href="/">
-					<a href="/">Contact</a>
+				<Link
+					to="contact"
+					spy={true}
+					smooth={true}
+					duration={500}
+					className="link"
+				>
+					Contact
 				</Link>
 			</Menu>
 		</MainContainer>
@@ -33,16 +43,15 @@ const MainContainer = styled.div`
 	padding: 20px;
 
 	.logo {
-		a {
-			font-size: 20px;
-			color: rgba(34, 34, 34, 0.692);
-		}
+		font-size: 20px;
+		color: rgba(34, 34, 34, 0.692);
+
 		h1 {
 			cursor: default;
 		}
 	}
 
-	a {
+	.link {
 		text-decoration: none;
 	}
 
@@ -63,6 +72,10 @@ const Menu = styled.div`
 		font-size: 20px;
 		text-transform: uppercase;
 		color: rgba(34, 34, 34, 0.692);
+
+		&:hover {
+			color: #f4f4f4;
+		}
 	}
 
 	@media (max-width: 768px) {

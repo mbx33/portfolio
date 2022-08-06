@@ -57,9 +57,16 @@ const Menu = styled.div`
 		}
 	}
 
+	@media (max-width: 1020px) {
+		font-size: 3.3rem;
+
+		a {
+			padding: 0.3rem;
+		}
+	}
+
 	@media (max-width: 768px) {
 		font-size: 3.3rem;
-		/* display: grid; */
 
 		a {
 			padding: 0.3rem;

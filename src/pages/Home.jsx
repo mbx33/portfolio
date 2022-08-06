@@ -5,6 +5,7 @@ import Projects from '../components/Projects';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import Contact from '../components/Contact';
+// import LinkUp from '../components/LinkUp';
 
 function Home() {
 	return (
@@ -14,6 +15,7 @@ function Home() {
 			<Projects />
 			<Demos />
 			<Contact />
+			{/* <LinkUp /> */}
 		</Container>
 	);
 }

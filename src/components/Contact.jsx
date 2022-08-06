@@ -91,6 +91,8 @@ const Container = styled.section`
 
 	.btn:hover,
 	.btn:active {
+		color: #f4f4f4;
+		border: 1px solid #fff;
 		background-color: hsl(211, 100%, 60%, 0.8);
 		box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
 	}

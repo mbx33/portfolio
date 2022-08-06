@@ -16,9 +16,9 @@ function Demos() {
 						width="375px"
 						height="280px"
 						url="#"
-						frameborder="0"
-						muted="true"
-						controls="true"
+						frameBorder="0"
+						muted={true}
+						controls={true}
 						style={{ border: '2px solid white' }}
 					/>
 				</LinkWrap>
@@ -29,9 +29,9 @@ function Demos() {
 						width="375px"
 						height="280px"
 						url="https://youtu.be/0HdMJELXs9c"
-						frameborder="0"
-						muted="true"
-						controls="true"
+						frameBorder="0"
+						muted={true}
+						controls={true}
 						style={{ border: '2px solid white' }}
 					/>
 				</LinkWrap>
@@ -42,9 +42,9 @@ function Demos() {
 						width="375px"
 						height="280px"
 						url="#"
-						frameborder="0"
-						muted="true"
-						controls="true"
+						frameBorder="0"
+						muted={true}
+						controls={true}
 						style={{ border: '2px solid white' }}
 					/>
 				</LinkWrap>

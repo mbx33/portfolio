@@ -84,8 +84,6 @@ const Container = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		/* flex-direction: column; */
-		/* display: grid; */
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 	@media (max-width: 570px) {
@@ -124,7 +122,6 @@ const SkillWrap = styled.div`
 		padding: 1rem 4rem 0;
 
 		&:hover {
-			/* box-shadow: 0 0 1rem hsl(0, 0%, 100%, 0.8); */
 			transform: scale(1.3);
 		}
 
