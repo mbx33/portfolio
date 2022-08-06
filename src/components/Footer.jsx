@@ -57,8 +57,8 @@ const Menu = styled.div`
 		}
 	}
 
-	@media (max-width: 1020px) {
-		font-size: 3.3rem;
+	@media (max-width: 1030px) {
+		font-size: 4.3rem;
 
 		a {
 			padding: 0.3rem;
@@ -66,18 +66,18 @@ const Menu = styled.div`
 	}
 
 	@media (max-width: 768px) {
-		font-size: 3.3rem;
+		font-size: 3.2rem;
 
 		a {
-			padding: 0.3rem;
+			padding: 0.2rem;
 		}
 	}
 
-	@media (max-width: 575px) {
-		font-size: 2.7rem;
+	@media (max-width: 595px) {
+		font-size: 3rem;
 	}
 
-	@media (max-width: 450px) {
+	@media (max-width: 510px) {
 		font-size: 2rem;
 	}
 `;
