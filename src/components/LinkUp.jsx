@@ -1,21 +1,10 @@
-import React, { useRef, useState } from 'react';
-import { useInViewport } from 'react-in-viewport';
 import styled from 'styled-components';
+import { HiArrowUp } from 'react-icons/hi';
 
-function LinkUp() {
-	const [inView, setInView] = useState(false);
-	const myRef = useRef();
-	const { inViewport, enterCount } = useInViewport(myRef);
-	console.log(inViewport);
-
-	if (inViewport) {
-		return setInView(true);
-	}
-
+function LinkUp({ scroll }) {
 	return (
-		<Wrapper ref={myRef} className={` ${inView ? 'show' : 'hide'}`}>
-			<h1>Link Up</h1>
-			<p>{enterCount}</p>
+		<Wrapper>
+			<HiArrowUp onClick={scroll} className="btn-up" />
 		</Wrapper>
 	);
 }
@@ -23,12 +12,19 @@ function LinkUp() {
 export default LinkUp;
 
 const Wrapper = styled.div`
-	.hide {
-		opacity: 0;
-	}
+	.btn-up {
+		font-size: 4rem;
+		padding: 1rem;
+		border-radius: 50%;
+		color: #f4f4f4;
+		background-color: hsl(211, 100%, 60%, 0.8);
+		box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
 
-	.show {
-		opacity: 1;
-		color: blue;
+		cursor: pointer;
+
+		:hover {
+			opacity: 0.8;
+			border: 1px solid #f4f4f4;
+		}
 	}
 `;
