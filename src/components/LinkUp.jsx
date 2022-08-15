@@ -17,13 +17,14 @@ const Wrapper = styled.div`
 		padding: 1rem;
 		border-radius: 50%;
 		color: #f4f4f4;
+
 		background-color: hsl(211, 100%, 60%, 0.8);
 		box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
 
 		cursor: pointer;
 
 		:hover {
-			opacity: 0.8;
+			background-color: hsl(120, 100%, 25%, 0.8);
 			border: 1px solid #f4f4f4;
 		}
 	}

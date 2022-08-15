@@ -7,7 +7,6 @@ function Projects() {
 			<ProjectWrap>
 				<div className="p-title article-content">
 					<h2>Recent Projects</h2>
-					<br />
 					<p>
 						A few of my most recent projects I've worked on. More demos coming
 						soon.
@@ -15,49 +14,45 @@ function Projects() {
 				</div>
 				<SideArticleContainer>
 					<div className="article-content">
-						<ol className="projects">
-							<li>
-								<h3>Project: Money Tracker</h3>
-								<p>
-									A single page app that uses firebase to authenticate
-									and store data entered by the users.
-								</p>
+						<div className="projects">
+							<h3>Project: Money Tracker</h3>
+							<p>
+								A single page app that uses firebase to authenticate and
+								store data entered by the users.
+							</p>
+							<a
+								className="btn"
+								href="https://money-tracker-fc1f0.web.app/login"
+								target="[_]blank"
+							>
+								Check it out!
+							</a>
+						</div>
+						<div className="projects">
+							<h3>Project: Ask Leonardo</h3>
+							<p>
+								Users can ask any question or give a command in the input
+								line and get a response from an AI
+							</p>
+							<div className="btn-group">
 								<a
 									className="btn"
-									href="https://money-tracker-fc1f0.web.app/login"
+									href="http://serene-reef-46633.herokuapp.com/"
 									target="[_]blank"
 								>
 									Check it out!
 								</a>
-							</li>
-						</ol>
-						<ol className="projects">
-							<li>
-								<h3>Project: Ask Leonardo</h3>
-								<p>
-									Users can ask any question or give a command in the
-									input line and get a response from an AI
-								</p>
-								<div className="btn-group">
-									<a
-										className="btn"
-										href="http://serene-reef-46633.herokuapp.com/"
-										target="[_]blank"
-									>
-										Check it out!
-									</a>
 
-									<a
-										className="btn"
-										href="https://github.com/mbx33/openai-react.git"
-										target="[_]blank"
-									>
-										Github repo
-									</a>
-								</div>
-							</li>
-						</ol>
-						<ul className="challenges">
+								<a
+									className="btn"
+									href="https://github.com/mbx33/openai-react.git"
+									target="[_]blank"
+								>
+									Github repo
+								</a>
+							</div>
+						</div>
+						<div className="challenges">
 							<h3>{`< Frontend Challenges />`}</h3>
 							<p>A responsive landing page for business</p>
 							<a
@@ -67,7 +62,7 @@ function Projects() {
 							>
 								Github Repo
 							</a>
-						</ul>
+						</div>
 					</div>
 				</SideArticleContainer>
 			</ProjectWrap>
@@ -90,10 +85,12 @@ const ProjectWrap = styled.div`
 	.p-title {
 		font-size: 1.3rem;
 		text-align: center;
+		margin-bottom: 4rem;
 	}
 
 	.p-title h2 {
 		font-size: 2.5rem;
+		margin-bottom: 1rem;
 	}
 
 	@media (max-width: 768px) {
@@ -126,7 +123,8 @@ const SideArticleContainer = styled.div`
 
 		.btn:hover,
 		.btn:active {
-			background-color: hsl(211, 100%, 60%, 0.8);
+			/* background-color: hsl(211, 100%, 60%, 0.8); */
+			background-color: hsl(120, 100%, 25%, 0.75);
 			box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
 		}
 
