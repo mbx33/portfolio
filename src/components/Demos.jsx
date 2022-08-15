@@ -6,7 +6,7 @@ function Demos() {
 	return (
 		<Container>
 			<div className="d-title">
-				<h2>Demos</h2>
+				<h5>Demos</h5>
 			</div>
 			<LinkContainer>
 				<LinkWrap>
@@ -60,10 +60,10 @@ const Container = styled.div`
 	background-image: url('/images/gun-metal.png');
 	padding-bottom: 2rem;
 
-	.d-title {
-		font-size: 2.5rem;
+	.d-title h5 {
 		color: #fff;
 		text-align: center;
+		font-size: 3rem;
 	}
 `;
 

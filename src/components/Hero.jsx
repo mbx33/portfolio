@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { BsArrowBarDown } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
-import Fade from 'react-reveal/Fade';
 import Header from './Header';
 
 import '../index.css';
@@ -14,25 +13,22 @@ function Hero() {
 			<Header />
 			<MainContainer>
 				<TextWrap>
-					<Fade right>
-						<p>
-							I've been building, and designing websites for over 5 years
-							now. I've just started to develop the skills necessary to code
-							and create better designs. I love to learn, and want to
-							continue to innovate on my website designs and builds.
-						</p>
-					</Fade>
+					<p>
+						I've been building, and designing websites for over 5 years now.
+						I've just started to develop the skills necessary to code and
+						create better designs. I love to learn, and want to continue to
+						innovate on my website designs and builds.
+					</p>
 				</TextWrap>
 
 				<ArrowDown>
-					<h3>Skills</h3>
-					<h4>Projects</h4>
+					<p>Skills</p>
+					<p>Projects</p>
 
 					<Link to="skills" spy={true} smooth={true} duration={500}>
 						<BsArrowBarDown
 							style={{
 								fontSize: '50px',
-								marginTop: '2rem',
 								height: '40px',
 								animation: 'animateDown infinite 1.5s',
 								cursor: 'pointer',
@@ -53,7 +49,12 @@ const Wrap = styled.div`
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url('/images/desert.webp');
+	//original desert image --
+	/* background-image: url('/images/desert.webp'); */
+	// court image from Moab
+	background-image: url('/images/court-1.jpg');
+	// Arches image from Moab
+	/* background-image: url('/images/arch-left.jpg'); */
 	overflow-y: hidden;
 `;
 
@@ -73,7 +74,7 @@ const TextWrap = styled.div`
 	margin: 15vh auto 0 auto;
 	padding: 18px;
 	width: 40%;
-	background-color: rgba(34, 34, 34);
+	background-color: rgba(34, 34, 34, 0.8);
 	background-image: url('/images/gun-metal.png');
 	border-radius: 10px;
 
@@ -107,8 +108,9 @@ const ArrowDown = styled.div`
 	text-align: center;
 	margin-top: 8rem;
 
-	h4 {
-		margin-top: 1.2rem;
+	p {
+		margin-top: 1rem;
+		font-size: 1.9rem;
 	}
 
 	@media (max-width: 768px) {

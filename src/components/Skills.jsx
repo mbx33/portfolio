@@ -18,47 +18,46 @@ function Skills() {
 			<Bounce bottom>
 				<SkillWrap>
 					<ImHtmlFive2 style={{ color: 'red' }} />
-					<br />
 					<p>HTML 5</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiCss3 style={{ color: 'blue' }} />
-					<br />
 					<p>CSS</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiJavascript style={{ color: 'yellow' }} />
-					<br />
 					<p>Javascript</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiNodedotjs style={{ color: 'green' }} />
-					<br />
 					<p>Node JS</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiReact style={{ color: 'blue' }} />
-					<br />
 					<p>React</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiMongodb style={{ color: 'green' }} />
-					<br />
 					<p>Mongo DB</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<SiPostgresql style={{ color: 'blue' }} />
-					<br />
 					<p>Postgres</p>
 				</SkillWrap>
+
 				<SkillWrap>
 					<FaGitAlt style={{ color: 'red' }} />
-					<br />
 					<p>GIT</p>
 				</SkillWrap>
+
 				<SkillWrap className="skill-wrap">
 					<FaGithub style={{ color: '#4495d4' }} />
-					<br />
 					<p>Github</p>
 				</SkillWrap>
 			</Bounce>
