@@ -33,6 +33,7 @@ function Demos() {
 						muted={true}
 						controls={true}
 						style={{ border: '2px solid white' }}
+						
 					/>
 				</LinkWrap>
 				<LinkWrap>

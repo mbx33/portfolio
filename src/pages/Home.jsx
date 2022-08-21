@@ -15,6 +15,7 @@ function Home() {
 			if (window.pageYOffset > 300) {
 				console.log(inView);
 				setInView(true);
+				
 			} else {
 				setInView(false);
 			}

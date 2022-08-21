@@ -10,6 +10,7 @@
 body {
 	width: 100%;
 	overflow-x: hidden;
+	font-family: 'Poppins', sans serif;
 	/* color: hsl(211, 100%, 60%); */
 	/* color: hsl(120, 100%, 25%); */
 }
