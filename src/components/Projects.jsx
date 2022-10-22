@@ -15,6 +15,20 @@ function Projects() {
 				<SideArticleContainer>
 					<div className="article-content">
 						<div className="projects">
+							<h3>Project: Client Website</h3>
+							<p>
+								A single page app that uses stripe for secure payments and
+								customers can signup to an email list.
+							</p>
+							<a
+								className="btn"
+								href="https://royal-retreat.netlify.app/"
+								target="[_]blank"
+							>
+								Check it out Live!
+							</a>
+						</div>
+						<div className="projects">
 							<h3>Project: Money Tracker</h3>
 							<p>
 								A single page app that uses firebase to authenticate and
@@ -28,6 +42,7 @@ function Projects() {
 								Check it out!
 							</a>
 						</div>
+
 						<div className="projects">
 							<h3>Project: Ask Leonardo</h3>
 							<p>
