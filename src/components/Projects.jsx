@@ -15,7 +15,7 @@ function Projects() {
 				<SideArticleContainer>
 					<div className="article-content">
 						<div className="projects">
-							<h3>Project: Client Website</h3>
+							<h3>Royal Retreat: Client Website</h3>
 							<p>
 								A single page app that uses stripe for secure payments and
 								customers can signup to an email list.

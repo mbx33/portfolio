@@ -19,8 +19,6 @@ const Wrapper = styled.div`
 		color: #f4f4f4;
 
 		background-color: hsl(211, 100%, 60%, 0.8);
-		box-shadow: 0 0 0.5rem hsl(211, 100%, 60%);
-
 		cursor: pointer;
 
 		:hover {
