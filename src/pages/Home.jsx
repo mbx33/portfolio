@@ -13,7 +13,6 @@ function Home() {
 	useEffect(() => {
 		window.addEventListener('scroll', () => {
 			if (window.pageYOffset > 300) {
-				console.log(inView);
 				setInView(true);
 				
 			} else {

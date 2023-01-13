@@ -15,6 +15,17 @@ body {
 	/* color: hsl(120, 100%, 25%); */
 }
 
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
 @keyframes animateDown {
 	0%,
 	20%,
