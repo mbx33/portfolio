@@ -49,12 +49,8 @@ const Wrap = styled.div`
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	//original desert image --
-	/* background-image: url('/images/desert.webp'); */
-	// court image from Moab
-	background-image: url('/images/court-1.jpg');
-	// Arches image from Moab
-	/* background-image: url('/images/arch-left.jpg'); */
+	background-image: url('https://res.cloudinary.com/high-desert-development/image/upload/v1675992855/court-1_krvrlt.jpg');
+
 	overflow-y: hidden;
 `;
 
